@@ -1,6 +1,4 @@
-package MobileWorldCongress;
-
-public class Tablet {
+public class tablet {
 
     private String marca;
     private String model;
