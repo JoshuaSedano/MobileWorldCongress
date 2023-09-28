@@ -1,11 +1,11 @@
-public class tablet {
+public class Tablet {
 
     private String marca;
     private String model;
     private double preuBase;
     private double nPolsades;
 
-    public tablet(String marca, String model, double preuBase, double nPolsades) {
+    public Tablet(String marca, String model, double preuBase, double nPolsades) {
         this.marca = marca;
         this.model = model;
         this.preuBase = preuBase;
@@ -49,8 +49,10 @@ public class tablet {
     // Altres metodes
     @Override
     public String toString() {
-        return "Tablet{Model" + model + ", Marca " + marca +
-                ", Preu Base " + preuBase +
-                ", nPolsades=" + nPolsades + "}";
+        String info = "Marca: " + marca + "\n";
+        info += "Model: " + model + "\n";
+        info += "Preu Base: " + preuBase + " Euros\n";
+        info += "Polsades: " + nPolsades + "\n";
+        return info;
     }
 }

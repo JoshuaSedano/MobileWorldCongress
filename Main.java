@@ -1,26 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        DispositiuMobil[] dispositiu = new DispositiuMobil[5];
-        dispositiu[0] = new Altre("Huawei", "TX800", 100, "Rellotge intel·ligent");
-        dispositiu[1] = new Smartphone("Samsung", 300, "S20 FE", "Android", "No");
-        dispositiu[2] = new Smartphone("Iphone", "X10", 500, "IOS16", "Si");
-        dispositiu[3] = new Tablet("Xiaomi", "LH65", 400, 15);
-        dispositiu[4] = new Smartphone("Samsung", "touch", 650, "Android");
+        Smartphone smartphone1 = new Smartphone("Samsung", "TX800", 300, "Android", false, false);
+        Smartphone smartphone2 = new Smartphone("Iphone", "10P", 500, "IOS", true, true);
+        Tablet tablet1 = new Tablet("Siaomi", "14", 400, 17);
+        Altre altre1 = new Altre("Xiaomi", "LH65", 100, "Rellotge Int");
+        Tablet tablet2 = new Tablet("TonyOmi", "23", 1000, 23);     
+
         
-        for(int i = 0; i < dispositiu.length; i++){
-            System.out.println(dispositiu[i]);
-        }
         
-        System.out.println(dispositiu[0].preuFinal());
-        System.out.println(dispositiu[1].preuFinal());
-        System.out.println(dispositiu[2].preuFinal());
-        System.out.println(dispositiu[3].preuFinal());
-        System.out.println(dispositiu[4].preuFinal());
-        
-        Smartphone s1 = new Smartphone("Samsung", 300, "S20 FE", "Android", "No");
-        Smartphone s2 = new Smartphone("Iphone", "X10", 500, "IOS16", "Si");
-        Tablet t1 = new Tablet("Xiaomi", "LH65", 400, 15);
-        Smartphone s3 = new Smartphone("Samsung", "touch", 650, "Android");
+        System.out.println(smartphone1);
+        System.out.println(smartphone2);
+        System.out.println(tablet1);
+        System.out.println(altre1);
+        System.out.println(tablet2);
         
     }
 }

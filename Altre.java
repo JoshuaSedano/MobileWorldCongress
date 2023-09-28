@@ -2,10 +2,10 @@ public class Altre {
     
     private String marca;
     private String model;
-    private String preuBase;
+    private int preuBase;
     private String descripcio;
 
-    public Altre(String marca, String model, String preuBase, String descripcio) {
+    public Altre(String marca, String model, int preuBase, String descripcio) {
         this.marca = marca;
         this.model = model;
         this.preuBase = preuBase;
@@ -28,11 +28,11 @@ public class Altre {
         this.model = model;
     }
 
-    public String getPreuBase() {
+    public int getPreuBase() {
         return preuBase;
     }
 
-    public void setPreuBase(String preuBase) {
+    public void setPreuBase(int preuBase) {
         this.preuBase = preuBase;
     }
 
@@ -46,8 +46,10 @@ public class Altre {
 
     @Override
     public String toString() {
-        return "Altre{" + "marca=" + marca + ", model=" + model + ", preuBase=" + preuBase + ", descripcio=" + descripcio + '}';
+        String info = "Marca: " + marca + "\n";
+        info += "Model: " + model + "\n";
+        info += "Preu Base: " + preuBase + " Euros\n";
+        info += "Descripcio: " + descripcio + "\n";
+        return info;
     }
-    
-    
 }
