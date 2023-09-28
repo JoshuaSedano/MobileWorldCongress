@@ -7,7 +7,7 @@ public class Tablet {
     private double preuBase;
     private double nPolsades;
 
-    public Tablet(String marca, String model, double preuBase, double nPolsades) {
+    public tablet(String marca, String model, double preuBase, double nPolsades) {
         this.marca = marca;
         this.model = model;
         this.preuBase = preuBase;
