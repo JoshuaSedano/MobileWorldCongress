@@ -1,16 +1,16 @@
 package MobileWorldCongress;
 
-public abstract class Dispositiu{
-    
+public abstract class Dispositiu {
+
     private String marca;
     private String model;
     private double preuBase;
-    
-    public  Dispositiu(String marca, String model, double preuBase){
-        if (preuBase < 0){
+
+    public Dispositiu(String marca, String model, double preuBase) {
+        if (preuBase < 0) {
             throw new IllegalArgumentException("El preu no es correcte");
         }
-        
+
         this.marca = marca;
         this.model = model;
         this.preuBase = preuBase;
@@ -44,6 +44,6 @@ public abstract class Dispositiu{
     public String toString() {
         return "Dispositiu{" + "marca=" + marca + ", model=" + model + ", preuBase=" + preuBase + "€" + '}';
     }
-    
+
     public abstract double preuFinal();
 }

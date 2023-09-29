@@ -17,20 +17,18 @@ public class Tablet extends Dispositiu {
         this.nPolsades = nPolsades;
     }
 
-    // Altres metodes
     @Override
     public String toString() {
         return "Tablet{" + "nPolsades=" + nPolsades + '"' + " " + super.toString() + '}';
     }
 
     @Override
-    public double preuFinal(){
+    public double preuFinal() {
         double preuFinal;
         double preuBase;
-        
+
         preuBase = getPreuBase();
         preuFinal = preuBase * 2;
         return preuFinal;
     }
-
 }
