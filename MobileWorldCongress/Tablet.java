@@ -1,6 +1,6 @@
 package MobileWorldCongress;
 
-public class Tablet extends Dispositiu {
+public class Tablet extends Dispositiu implements GammaAlta {
 
     private double nPolsades;
 
@@ -30,5 +30,10 @@ public class Tablet extends Dispositiu {
         preuBase = getPreuBase();
         preuFinal = preuBase * 2;
         return preuFinal;
+    }
+
+    @Override
+    public boolean isGammaAlta() {
+        return preuFinal() > 700;
     }
 }

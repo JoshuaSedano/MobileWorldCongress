@@ -1,6 +1,6 @@
 package MobileWorldCongress;
 
-public class Smartphone extends Dispositiu {
+public class Smartphone extends Dispositiu implements GammaAlta {
     public static final String accPerDefecte = "No";
     public static final String GpsPerDefecte = "Si";
 
@@ -79,5 +79,10 @@ public class Smartphone extends Dispositiu {
             preuFinal = nouPreu + preuBase;
         }
         return preuFinal;
+    }
+
+    @Override
+    public boolean isGammaAlta() {
+        return preuFinal() > 700;
     }
 }

@@ -23,5 +23,12 @@ public class Main {
         Smartphone s2 = new Smartphone("Iphone", "X10", 500, "IOS16", "Si");
         Tablet t1 = new Tablet("Xiaomi", "LH65", 400, 15);
         Smartphone s3 = new Smartphone("Samsung", "touch", 650, "Android");
+
+        System.out.println("Dispositius de gamma alta:");
+        for (int i = 0; i < dispositiu.length; i++) {
+            if (dispositiu[i] instanceof GammaAlta && ((GammaAlta) dispositiu[i]).isGammaAlta()) {
+                System.out.println(dispositiu[i]);
+            }
+        }
     }
 }
